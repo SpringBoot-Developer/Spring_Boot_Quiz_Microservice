@@ -1,0 +1,41 @@
+package com.quiz.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Question {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long questionId;
+	private String questionContent;
+	private Long quizId;
+
+	public Long getQuestionId() {
+		return questionId;
+	}
+
+	public void setQuestionId(Long questionId) {
+		this.questionId = questionId;
+	}
+
+	public String getQuestionContent() {
+		return questionContent;
+	}
+
+	public void setQuestionContent(String questionContent) {
+		this.questionContent = questionContent;
+	}
+
+	public Long getQuizId() {
+		return quizId;
+	}
+
+	public void setQuizId(Long quizId) {
+		this.quizId = quizId;
+	}
+
+}

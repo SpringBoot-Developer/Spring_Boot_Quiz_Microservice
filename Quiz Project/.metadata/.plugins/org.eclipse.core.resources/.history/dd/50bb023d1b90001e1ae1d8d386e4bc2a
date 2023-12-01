@@ -1,0 +1,5 @@
+package com.question.model;
+
+public class Question {
+
+}
